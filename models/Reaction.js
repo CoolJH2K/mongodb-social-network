@@ -33,3 +33,6 @@ const reactionSchema = new Schema(
        id: false,
     }
 );
+
+// Export schema
+module.exports = reactionSchema;
