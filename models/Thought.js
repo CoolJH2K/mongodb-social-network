@@ -24,7 +24,8 @@ const thoughtSchema = new mongoose.Schema(
     // Getter method
     {
         toJSON: {
-            getters: true
+            getters: true,
+            virtuals: true
         },
         id: false
     }
