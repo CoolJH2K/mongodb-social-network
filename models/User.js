@@ -1,10 +1,10 @@
 // Require mongoose, thougthSchema, and userSchema
-const {Schema, Types} = require("mongoose");
+const {Schema, Types, model} = require("mongoose");
 const thoughtSchema = require("./Thought");
 const userScehma = require("./User");
 
 // Create userSchema
-const userSchema = new mongoose.Schema(
+const userSchema = new Schema(
     {
         username: {
             type: String,
@@ -22,4 +22,4 @@ const userSchema = new mongoose.Schema(
 );
 
 // Create User model
-const User = mongoose.model("User", userSchema);
+const User = model("User", userSchema);

@@ -1,9 +1,9 @@
 // Require mongoose and reactionSchema
-const {Schema, Types} = require("mongoose");
+const {Schema, Types, model} = require("mongoose");
 const reactionSchema = require("./Reaction");
 
 // Create thoughtSchema
-const thoughtSchema = new mongoose.Schema(
+const thoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
@@ -32,4 +32,4 @@ const thoughtSchema = new mongoose.Schema(
 );
 
 // Create Thought model
-const Thought = mongoose.model("Thought", thoughtSchema);
+const Thought = model("Thought", thoughtSchema);

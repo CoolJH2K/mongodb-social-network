@@ -1,6 +1,6 @@
 // Require models
 const Reaction = require("./Reaction");
-const Thought = requier("./Thought");
+const Thought = require("./Thought");
 const User = require("./User");
 
 // Export modules
