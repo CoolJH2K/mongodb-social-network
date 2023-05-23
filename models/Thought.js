@@ -33,3 +33,6 @@ const thoughtSchema = new Schema(
 
 // Create Thought model
 const Thought = model("Thought", thoughtSchema);
+
+// Export shcema
+module.exports = Thought;

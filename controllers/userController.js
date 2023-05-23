@@ -1,11 +1,12 @@
 // Require model
-const {User} = require("../models");
+const {User} = require('../models');
 
 module.exports = {
     // GET all users
     async getUsers(req, res) {
         try {
             const users = await User.find();
+            res.json(users);
         } catch (err) {
             res.status(500).json(err);
         }
@@ -28,6 +29,7 @@ module.exports = {
     // CREATE a user
     async createUser(req, res) {
         try {
+            console.log(req.body);
             const user = await User.create(req.body);
             res.json(user);
         } catch (err) {

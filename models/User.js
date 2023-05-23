@@ -1,7 +1,6 @@
 // Require mongoose, thougthSchema, and userSchema
 const {Schema, Types, model} = require("mongoose");
 const thoughtSchema = require("./Thought");
-const userScehma = require("./User");
 
 // Create userSchema
 const userSchema = new Schema(
@@ -23,3 +22,6 @@ const userSchema = new Schema(
 
 // Create User model
 const User = model("User", userSchema);
+
+// Export schema
+module.exports = User;

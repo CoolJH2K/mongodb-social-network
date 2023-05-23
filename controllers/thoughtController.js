@@ -1,5 +1,5 @@
 // Require models
-const {Thought, User} = require("../models");
+const {Thought, User} = require('../models');
 
 module.exports = {
     // GET all thoughts
@@ -29,6 +29,7 @@ module.exports = {
     // CREATE a thought
     async createThought(req, res) {
         try {
+            console.log(req.body);
             const thought = await Thought.create(req.body);
             res.json(thought);
         } catch (err) {
