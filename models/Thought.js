@@ -35,4 +35,4 @@ const thoughtSchema = new Schema(
 const Thought = model("Thought", thoughtSchema);
 
 // Export shcema
-module.exports = Thought;
+// module.exports = Thought;
